@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>编程课考试心得</title>
+      <link href="/2020/06/15/bian-cheng-ke-kao-shi-xin-de/"/>
+      <url>/2020/06/15/bian-cheng-ke-kao-shi-xin-de/</url>
+      
+        <content type="html"><![CDATA[<h1 id="献给还没过编程的你们"><a href="#献给还没过编程的你们" class="headerlink" title="献给还没过编程的你们"></a>献给还没过编程的你们</h1><h2 id="考前准备"><a href="#考前准备" class="headerlink" title="考前准备"></a>考前准备</h2><ul><li>看一遍Basile教授的视频</li><li>刷一遍Moodle上去年Bettini教授给的考试题目</li><li>考试前好好睡一觉</li><li>祈祷考试题目简单一些</li><li>测试手机对长时间使用MEET的反应</li><li>调整好书桌和手机的位置，让手机能够拍到<strong>人脸，鼠标，键盘，显示屏</strong></li><li>注意Eclipse使用的Java版本必须是 <strong>Java 8</strong></li><li>考前关掉一切其他应用，<strong>手机静音</strong></li><li>洗头</li></ul><h2 id="笔试注意事项"><a href="#笔试注意事项" class="headerlink" title="笔试注意事项"></a>笔试注意事项</h2><ul><li>不要一开始就想着写代码，先认真把题目和注意事项都读一遍，然后大概了解题目的难点是什么</li><li>变量，方法，类的名字要和题目上规定的<strong>一模一样</strong>， <em>toString()</em> 方法要注意<strong>空格的数量和所在的位置</strong>。</li><li>不要钻牛角尖，一种方法不行马上换另一种试试, 哪怕这个方法很丑</li><li><strong>不要写重复</strong>的代码，通过测试后，自己重新看一遍有没有哪些地方可以写一个辅助的方法</li><li>考试的时候如果忘记各别方法的名称或者参数可以把对象写出来后使用 <em>dot notation</em> 和Eclipse自带的JavaDoc了解具体信息。</li><li>Java OOP部分的题目相对算法部分来说更简单，如果在算法卡住的话可以考虑先写OOP部分</li><li><em>Stream</em> 使用的时候要注意是用 <em>Parallel Stream</em> 还是普通 <em>Stream</em> ， 如果是前者可能在各别方法上要使用支持多进程的版本</li><li>当看到&lt;…&gt;的时候，判断使用 <code>? super T</code> 还是 <code>? extend T</code> 最快的方法是: 从 <em>List</em> 里读东西用extend，存东西到 <em>List</em> 用super</li><li>自动生成在大多数时候都很好用，除了 <em>toString()</em></li><li>其他的之后再补充</li></ul><h2 id="5月21号考试示例"><a href="#5月21号考试示例" class="headerlink" title="5月21号考试示例"></a>5月21号考试示例</h2><p><a href="https://e-l.unifi.it/mod/resource/view.php?id=409320" target="_blank" rel="noopener">题目</a><a href="https://e-l.unifi.it/mod/resource/view.php?id=409292" target="_blank" rel="noopener">答案</a> (需要Moodle账号)<br>我第一题的答案和老师的第一题第二个答案差不多，第二个答案类似但是明显老师的更加简洁。这两个答案明显比我的更好， 我就不放我的答案了。</p><h2 id="口试注意事项"><a href="#口试注意事项" class="headerlink" title="口试注意事项"></a>口试注意事项</h2><ul><li>想要绕开老师的问题不太可能</li><li>也没有提示</li><li>Basile教授的问题主要在Java OOP方面</li><li>Basile教授在视频中提到的问题，<strong>大概率</strong>出现</li><li>做题时，可以先缓一缓，<strong>仔细看题目</strong>，说出你的想法</li><li>小技巧：如果你在讲的时候看Basile在做一些小动作，比如突然靠到椅背上，左右手动来动去，脸朝别的方向，那你大概率<strong>说错了</strong></li><li>Lollini教授的问题主要是 <em>Gocce di Java</em> 上的内容，可能会问类型转换，递归之类的问题</li><li>Lollini教授的脸没有对着你的主要原因是他有一个外置摄像头，所以他实际上是在看着你的，不要觉得他漫不经心</li></ul><h2 id="口试内容"><a href="#口试内容" class="headerlink" title="口试内容"></a>口试内容</h2><p>当天口试好像教授们只准备了两三种问题， Basile教授问我的是关于 <em>Overriding</em> 和  <em>Overloading</em> 的区别以及用法， 做了一个关于 <em>Employee</em> 和 <em>Manager</em> 的题目后，就结束了。<br>Lollini教授问的是关于 <em>类型转换</em> 方面的知识，重点想知道 <em>显示转换</em> 和<em>隐式转换<em>，</em>浮点数与整数转换</em> 会出现的各种情况</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 考试笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 考试笔记 </tag>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>新的开始</title>
       <link href="/2020/06/14/xin-de-kai-shi/"/>
       <url>/2020/06/14/xin-de-kai-shi/</url>
