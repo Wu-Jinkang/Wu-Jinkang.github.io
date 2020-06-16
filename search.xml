@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Hello World(测试HEXO添加代码)</title>
+      <link href="/2020/06/16/hello-world-ce-shi-hexo-tian-jia-dai-ma/"/>
+      <url>/2020/06/16/hello-world-ce-shi-hexo-tian-jia-dai-ma/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h1><p>HEXO最近几天使用下来感觉还是非常方便的， 唯一需要锻炼的就是Markdown格式的写法， 特别是考虑到之后需要讲解程序之类的情况，会用Markdown添加代码显得特别重要。在Markdown中附加代码需要用到 ``` [语言] [标题] [url] [网址名称] ``` 的格式来表达，因为我通过博客主题的作者推荐下载了<a href="https://github.com/ele828/hexo-prism-plugin" target="_blank" rel="noopener">hexo-prim-plugin</a>,一个代码高亮插件所以看起来会和HEXO原生的代码高亮有些许区别。下面是我用不同语言写的几个Hello World:</p><p>Java版本：</p><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MainClass</span> <span class="token punctuation">{</span>    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Hello World"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span><span class="token punctuation">}</span></code></pre><p>C++版本：</p><pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    std<span class="token operator">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Hello world"</span> <span class="token operator">&lt;&lt;</span> std<span class="token operator">::</span>endl<span class="token punctuation">;</span>    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre><p>JavaScript版本：</p><pre class=" language-javascript"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello world"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><p>HTML版本：</p><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Hello World<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre><p>Python3版本：</p><pre class=" language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Hello World"</span><span class="token punctuation">)</span></code></pre><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这个暗色的主题看起来很酷，感觉每种语言都还挺不错的，特别是JAVA版本五颜六色的很直观，代码用Markdown写起来也很简单，唯一可惜的就是高亮插件不一定支持汇编语言。毕竟汇编语言五花八门，作者也不可能把所有汇编语言都记录进去。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂谈 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 杂谈 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>编程课考试心得</title>
       <link href="/2020/06/15/bian-cheng-ke-kao-shi-xin-de/"/>
       <url>/2020/06/15/bian-cheng-ke-kao-shi-xin-de/</url>
