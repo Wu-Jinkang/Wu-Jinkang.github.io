@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="使用Python Request库登录Moodle, wjk-blog">
+    <meta name="keywords" content="使用Python与Requests库登录Moodle, wjk-blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>使用Python Request库登录Moodle | wjk-blog</title>
+    <title>使用Python与Requests库登录Moodle | wjk-blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -201,12 +201,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">使用Python Request库登录Moodle</h1>
+                    <h1 class="description center-align post-title">使用Python与Requests库登录Moodle</h1>
                 </div>
             </div>
         </div>
@@ -240,6 +240,10 @@
                                 <span class="chip bg-color">Web</span>
                             </a>
                         
+                            <a href="/tags/Requests/">
+                                <span class="chip bg-color">Requests</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -261,7 +265,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-06-19
+                    2020-09-01
                 </div>
                 
 
@@ -324,10 +328,10 @@ response <span class="token operator">=</span> session<span class="token punctua
 response<span class="token punctuation">.</span>raise_for_status<span class="token punctuation">(</span><span class="token punctuation">)</span>
 html <span class="token operator">=</span> response<span class="token punctuation">.</span>content</code></pre>
 <p>首先使用get方法发送并获取页面请求，然后把获得的回复信息存在response，接着通过raise_for_status方法检测请求结果，最后把response的内容部分，也就是页面的信息存在html变量中。我们得到的登陆界面和浏览器所呈现的是有区别的，浏览器它的作用是把Html，CSS和JavaScript渲染成画面，但是对于我们爬虫来说一切的信息已经在这串Html里了。进入了界面后按照我们之前的说法应该输入账号密码，但是与浏览器操作不同，我们不在意输入的过程，我们在意的是浏览器如何把我们的账号密码发送到服务端进行登录的。而这也真是http协议中POST扮演的角色，通过开发者工具中的网络监控我们可以看到学校的帐号会发送一个POST请求到服务器，这个请求包含以下信息：</p>
-<pre class=" language-html"><code class="language-html">anchor: 
-logintoken: AZ1f4bY9loLxPpJ6YZNjriCej7YaSuTg
-username: 7029446
-password: mypassword</code></pre>
+<pre class=" language-json"><code class="language-json">anchor<span class="token operator">:</span> 
+logintoken<span class="token operator">:</span> AZ1f4bY9loLxPpJ6YZNjriCej7YaSuTg
+username<span class="token operator">:</span> <span class="token number">7029446</span>
+password<span class="token operator">:</span> mypassword</code></pre>
 <p>我们想要登录的话得模拟这份内容然后通过post方法做同样的请求，但是目前我们只知道账号和密码，这个logintoken还不清楚。这时候我们得仔细研究网站的登录机制，通过观察网站的HTML，我发现这个所谓的logintoken其实就藏在我们的登录页面之中，如下：</p>
 <pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>hidden<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>logintoken<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>VzBdKwpCUvLlzN9tDoZoPdLFebSTtgIv<span class="token punctuation">"</span></span><span class="token punctuation">></span></span></code></pre>
 <p>所以我们要做的就是通过re的筛选功能获取这个input的value。</p>
@@ -363,7 +367,7 @@ login_response<span class="token punctuation">.</span>raise_for_status<span clas
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://wu-jinkang.github.io/2020/06/19/shi-yong-python-request-ku-deng-lu-moodle/">http://wu-jinkang.github.io/2020/06/19/shi-yong-python-request-ku-deng-lu-moodle/</a>
+                    <a href="http://wu-jinkang.github.io/2020/09/01/shi-yong-python-request-ku-deng-lu-moodle/">http://wu-jinkang.github.io/2020/09/01/shi-yong-python-request-ku-deng-lu-moodle/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -413,6 +417,10 @@ login_response<span class="token punctuation">.</span>raise_for_status<span clas
                                     <span class="chip bg-color">Web</span>
                                 </a>
                             
+                                <a href="/tags/Requests/">
+                                    <span class="chip bg-color">Requests</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -457,13 +465,13 @@ login_response<span class="token punctuation">.</span>raise_for_status<span clas
                 <i class="far fa-dot-circle"></i>&nbsp;Current
             </div>
             <div class="card">
-                <a href="/2020/06/19/shi-yong-python-request-ku-deng-lu-moodle/">
+                <a href="/2020/09/01/shi-yong-python-request-ku-deng-lu-moodle/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="使用Python Request库登录Moodle">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="使用Python与Requests库登录Moodle">
                         
-                        <span class="card-title">使用Python Request库登录Moodle</span>
+                        <span class="card-title">使用Python与Requests库登录Moodle</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -474,7 +482,7 @@ login_response<span class="token punctuation">.</span>raise_for_status<span clas
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-01
                             </span>
                         <span class="publish-author">
                             
@@ -502,6 +510,10 @@ login_response<span class="token punctuation">.</span>raise_for_status<span clas
                     
                     <a href="/tags/Web/">
                         <span class="chip bg-color">Web</span>
+                    </a>
+                    
+                    <a href="/tags/Requests/">
+                        <span class="chip bg-color">Requests</span>
                     </a>
                     
                 </div>
