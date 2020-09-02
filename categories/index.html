@@ -39,7 +39,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/medias/logo.jpg" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">wjk-blog</span>
                 </a>
@@ -116,7 +116,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/logo.jpg" class="logo-img circle responsive-img">
         
         <div class="logo-name">wjk-blog</div>
         <div class="logo-desc">
@@ -253,19 +253,10 @@
                 
                 
                 
-                <a href="/categories/%E8%80%83%E8%AF%95%E7%AC%94%E8%AE%B0/" title="考试笔记: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #F9EBEA;">考试笔记
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
                 <a href="/categories/%E6%9D%82%E8%B0%88/" title="杂谈: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F5EEF8;">杂谈
+                            style="background-color: #F9EBEA;">杂谈
                         <span class="tag-length">2</span>
                     </span>
                 </a>
@@ -274,7 +265,16 @@
                 <a href="/categories/Crawler/" title="Crawler: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #D5F5E3;">Crawler
+                            style="background-color: #F5EEF8;">Crawler
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/%E8%80%83%E8%AF%95%E7%AC%94%E8%AE%B0/" title="考试笔记: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #D5F5E3;">考试笔记
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -322,7 +322,7 @@
                     color: '#3C4858'
                 }
             },
-            indicator: [{"name":"考试笔记","max":3},{"name":"杂谈","max":3},{"name":"Crawler","max":3}],
+            indicator: [{"name":"杂谈","max":3},{"name":"Crawler","max":3},{"name":"考试笔记","max":3}],
             nameGap: 5,
             center: ['50%','55%'],
             radius: '66%'
@@ -333,7 +333,7 @@
             itemStyle: {normal: {areaStyle: {type: 'default'}}},
             data : [
                 {
-                    value : [1,2,1],
+                    value : [2,1,1],
                     name : 'Number of Categories'
                 }
             ]
@@ -349,6 +349,60 @@
 
 
     <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
     
     <div class="container row center-align" style="margin-bottom: 15px !important;">
         <div class="col s12 m8 l8 copy-right">
